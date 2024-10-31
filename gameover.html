@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake - Game Over</title>
+    <link rel="stylesheet" href="gameoverstyle.css">
+</head>
+<body>
+    <audio autoplay>
+        <source src="gameover.mp3">
+    </audio>
+    <div class="body">
+        <div id="Score">Score : 0</div>
+        <div id="gameover">Game Over</div>
+        <a href="game.html">
+            <button class="playagain">
+            Play Again !
+            </button>
+        </a>
+    </div>
+    <script>
+        let score=localStorage.getItem('points');
+        Score.innerHTML = "Score : "+score;
+    </script>
+</body>
+</html>

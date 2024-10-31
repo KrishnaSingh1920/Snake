@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: linear-gradient(135deg, #72d649, #82d932);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playagain {
+    background: linear-gradient(135deg, #72d649, #82d932);
+    top: 13.5em;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.1em solid white;
+    border-radius: 1em;
+    font-size: 1.75em;
+    font-weight: bolder;
+    padding: 0.40em;
+    color: white;
+    user-select: none;
+}
+
+.playagain:hover {
+    background: linear-gradient(135deg, #8ee45b, #5ccf2b);
+    color: rgb(14, 132, 20);
+    border-color: rgb(14, 132, 20);
+    box-shadow: 0px 0px 1.5px 1.5px rgb(162, 162, 162);
+}
+
+#gameover {
+    border: 0.05em solid white;
+    border-radius: 0.2em;
+    padding: 0.2em;
+    font-size: 3.5em;
+    font-family: 'Times New Roman', Times, serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top: 2em;
+    background: linear-gradient(135deg, #72d649, #82d932);
+    display: flex;
+    color: white;
+    user-select: none;
+}
+
+#Score {
+    border: 0.05em solid white;
+    border-radius: 0.1em;
+    background: linear-gradient(135deg, #72d649, #82d932);
+    padding: 0.25em;
+    position: absolute;
+    display: flex;
+    top: 4em;
+    font-size: 3.5em;
+    user-select: none;
+    color: white;
+}

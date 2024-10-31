@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: linear-gradient(135deg, #72d649, #82d932);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play {
+    background: linear-gradient(135deg, #72d649, #82d932);
+    border-radius: 0.5em;
+    border: 0.1em solid rgb(255, 255, 255);
+    color: white;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    padding: 0.5em;
+    user-select: none;
+}
+
+.play:hover {
+    background: linear-gradient(135deg, #8ee45b, #5ccf2b);
+    color: rgb(14, 132, 20);
+    border-color: rgb(14, 132, 20);
+    box-shadow: 0px 0px 1.5px 1.5px rgb(162, 162, 162);
+}
+
+#game {
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top: 4em;
+    border-radius: 0.5em;
+    border: 0.1em solid rgb(255, 255, 255);
+    background: linear-gradient(135deg, #72d649, #82d932);
+    padding: 0.5em;
+    color: white;
+    user-select: none;
+}
+
+#credits {
+    font-family: 'Times New Roman', Times, serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    bottom: 0.25em;
+    right: 0.25em;
+    user-select: none;
+    color: white;
+}

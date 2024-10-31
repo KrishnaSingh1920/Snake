@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: linear-gradient(135deg, #72d649, #82d932);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+#GameBoard {
+    background: linear-gradient(135deg, #97e06e, #6ace3b);
+    width: 22.5em;
+    height: 22.5em;
+    border: 2.5px solid white;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: repeat(25, 1fr);
+    grid-template-columns: repeat(25, 1fr);
+    margin-top: 7.5em;
+}
+
+#Score {
+    border: 0.1em solid white;
+    color: rgb(255, 255, 255);
+    border-radius: 0.2em;
+    background: linear-gradient(135deg, #72d649, #82d932);
+    padding: 0.25em;
+    position: absolute;
+    display: flex;
+    top: 1.5em;
+    right: 0.25em;
+    font-size: 2em;
+    user-select: none;
+}
+
+.gamepad {
+    width: 9em;
+    height: 9em;
+    background: linear-gradient(135deg, #72d649, #82d932);
+    position: absolute;
+    bottom: 2em;
+    border: 0.25em solid white;
+    border-radius: 1em;
+    box-shadow: 0em 0em 0.05em 0.05em rgb(130, 130, 130);
+}
+
+#up {
+    position: absolute;
+    top: 0.1em;
+    left: 33.33%;
+}
+
+#down {
+    position: absolute;
+    bottom: 0.1em;
+    left: 33.33%;
+}
+
+#left {
+    position: absolute;
+    left: 0.1em;
+    top: 33.33%;
+}
+
+#right {
+    position: absolute;
+    right: 0.1em;
+    top: 33.33%;
+}
+
+.button {
+    background: linear-gradient(135deg, #97e06e, #6ace3b);
+    color: rgb(0, 34, 0);
+    border-radius: 0.25em;
+    border: 0.1em solid white;
+    font-size: 25px;
+    width: 1.9em;
+    height: 1.9em;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #8ee45b, #5ccf2b);
+    border-color: rgb(0, 120, 0);
+    color: rgb(0, 50, 0);
+    box-shadow: 0em 0em 0.05em 0.05em rgb(80, 80, 80);
+}
+
+.snakehead {
+    background: rgb(0, 204, 0);
+    border-radius: 5px;
+    border: 1.5px solid rgb(0, 153, 0);
+}
+
+.snakebody {
+    background: rgb(51, 255, 51);
+    border-radius: 5px;
+    border: 1.5px solid rgb(34, 204, 34);
+}
+
+.food {
+    background: rgb(255, 51, 51);
+    border-radius: 50%;
+    border: 1px solid rgb(204, 0, 0);
+}
+
+#up img, #down img, #left img, #right img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#down img {
+    transform: rotate(180deg);
+}
+
+#left img {
+    transform: rotate(270deg);
+}
+
+#right img {
+    transform: rotate(90deg);
+}
