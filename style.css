@@ -98,12 +98,16 @@
     background: rgb(0, 204, 0);
     border-radius: 5px;
     border: 1.5px solid rgb(0, 153, 0);
+    position: relative;
+    z-index: 2; 
 }
 
 .snakebody {
     background: rgb(51, 255, 51);
     border-radius: 5px;
     border: 1.5px solid rgb(34, 204, 34);
+    position: relative; 
+    z-index: 1;
 }
 
 .food {
