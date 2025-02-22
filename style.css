@@ -4,7 +4,20 @@
 }
 
 .body {
-    background: linear-gradient(135deg, #72d649, #82d932);
+    background: linear-gradient(135deg,
+            #295a2b,
+            /* Dark Lime */
+            #5ECF3D,
+            #477833,
+            /* Original Lime */
+            #82D932,
+            #4e6c38,
+            /* Light Lime */
+            #93ff55
+            /* Lightest Lime */
+        );
+    background-size: 400% 400%;
+    animation: gradient 10s infinite linear;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -12,9 +25,9 @@
 }
 
 #GameBoard {
-    background: linear-gradient(135deg, #97e06e, #6ace3b);
-    width: 22.5em;
-    height: 22.5em;
+    background: linear-gradient(135deg, #72d649, #82d932);
+    width: 20em;
+    height: 20em;
     border: 2.5px solid white;
     border-radius: 5px;
     display: grid;
@@ -28,11 +41,11 @@
     color: rgb(255, 255, 255);
     border-radius: 0.2em;
     background: linear-gradient(135deg, #72d649, #82d932);
-    padding: 0.25em;
+    padding: 0.2em;
     position: absolute;
     display: flex;
-    top: 1.5em;
-    right: 0.25em;
+    top: 1.25em;
+    right: 0.75em;
     font-size: 2em;
     user-select: none;
 }
@@ -99,14 +112,14 @@
     border-radius: 5px;
     border: 1.5px solid rgb(0, 153, 0);
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 }
 
 .snakebody {
     background: rgb(51, 255, 51);
     border-radius: 5px;
     border: 1.5px solid rgb(34, 204, 34);
-    position: relative; 
+    position: relative;
     z-index: 1;
 }
 
@@ -116,7 +129,10 @@
     border: 1px solid rgb(204, 0, 0);
 }
 
-#up img, #down img, #left img, #right img {
+#up img,
+#down img,
+#left img,
+#right img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -132,4 +148,18 @@
 
 #right img {
     transform: rotate(90deg);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
